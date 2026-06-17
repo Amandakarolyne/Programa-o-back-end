@@ -1,0 +1,11 @@
+let capitais = ["curitiba", "floripa", "poa"];
+console.log(capitais[2]);
+capitais.push("sampa");
+console.log(capitais);
+capitais.unshift("vitoria");
+console.log(capitais);
+console.log(capitais[3]);
+let primeiroElemento = capitais.shift();
+console.log(primeiroElemento);
+let ultimoElemento = capitais.pop();
+console.log(ultimoElemento);
