@@ -48,7 +48,58 @@ console.log(sigla.charCodeAt(1))
 //Descubra o código do emoji '🚀'. (Dica: descubra em qual índice o emoji está localizado!)
 
 let frase = "Javascript é 🚀!";
-
+console.log(frase.indexOf("🚀"))
 console.log(frase.codePointAt(13))
+
+//6. Validador de Espaços em Branco
+//Escreva um pequeno código que receba a string let entrada = " "; (composta apenas por espaços):
+//Verifique se, após aplicar o .trim(), a string fica totalmente vazia "".
+//Imprima true se estiver vazia ou false caso contrário.
+
+let entrada = " ";
+console.log(entrada.trim( ))
+let existe = entrada.trim()
+console.log(existe.includes(" "))
+
+//. Verificando Limites dinamicamente
+//Dada uma frase qualquer (ex: let frase = "Aprender a programar é incrível";):
+//Tente acessar o caractere no índice 100  e imprima no console.
+//Tente acessar o mesmo índice 100 usando colchetes frase[100] e imprima no console.
+//Questão: O que foi impresso em cada um dos casos?
+
+let frase = "APRENDER A PROGRAMAR É INCRÍVEL";
+console.log(frase.charCodeAt(100))
+console.log(frase.charCodeAt[100])
+
+//8. Formatador de Nomes
+//Um sistema recebeu o nome completo de um cliente como " Ana Maria Silva ".
+//Remova todos os espaços extras do início e do fim.
+//Exiba no console uma mensagem assim: "O nome limpo tem X caracteres", onde X é o tamanho do nome já sem os espaços das pontas.
+
+let nome = "Ana Maria Silva"
+console.log(nome.length)
+let nomeLimpo = console.log(nome.trimm().length)
+
+
+//9. Descobrindo o Caractere pelo Código
+//Sabendo que o código UTF-16 da letra 'A' maiúscula é 65:
+//Crie uma string let texto = "A";
+//Descubra o correspondente em UFT-16 e veja  se o retorno realmente é 65.
+//Teste com a letra 'a' minúscula e veja se o código é igual ou diferente.
+
+let texto = "A"
+console.log(texto.charCodeAt(0))
+let texto2 = "a"
+console.log(texto2.charCodeAt(0))
+
+
+//10. Mini Inspetor de Strings (Desafio Integrado)
+//Crie uma string let frase = " Código Seguro 🔒 "; e faça o seguinte:Imprima o tamanho da string original.Crie uma nova variável com a frase limpa (sem espaços nas pontas).Imprima o primeiro caractere da frase limpa.Imprima o código do emoji 🔒 usando .codePointAt().
+
+let frase = "Código Seguro 🔒";
+console.log(frase.length)
+let fraseLimpa = frase.trim()
+let posicao = fraseLimpa.indexOf("🔒")
+console.log(fraseLimpa.codePointAt(posicao))
 
 
